@@ -1,0 +1,10 @@
+# Ignore artifacts:
+build
+coverage
+.next
+dist
+.github
+CHANGELOG.md
+
+# Ignore all HTML files:
+*.html
