@@ -1,34 +1,43 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 자재 플랫폼 Admin
 
-## Getting Started
+자재 플랫폼의 농자재 B2B 거래 플랫폼 Admin 프론트엔드를 개발합니다.
 
-First, run the development server:
+## 개발 환경 설정
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+[CONTRIBUTING.md](CONTRIBUTING.md)파일을 참고해 주세요.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## API
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+### Docs
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+추후 추가 예정
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### staging
 
-## Learn More
+https://api-main-dev.vhows.com/
 
-To learn more about Next.js, take a look at the following resources:
+### production
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+https://api-main.vhows.com/
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## CI/CD
 
-## Deploy on Vercel
+Git Actions를 통해서 빌드 및 배포 진행되고 있습니다.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+빌드 결과를 S3에 배포합니다.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Deploy
+
+### staging
+
+https://dev007.vhows.com/v2
+
+### production
+
+https://www.vhows.com/v2
+
+## 관련 링크
+
+프로젝트 정보(노션): https://www.notion.so/greenlabs/TRADE-b5496818e1e348cf82023acef09bcf62
+
+프로젝트 이슈(지라): https://green-labs.atlassian.net/browse/JAJE

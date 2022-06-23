@@ -1,6 +1,17 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-}
+const withExportImages = require("next-export-optimize-images");
 
-module.exports = nextConfig
+const nextConfig = {
+  reactStrictMode: false,
+  swcMinify: true,
+  compiler: {
+    removeConsole:
+      process.env.NODE_ENV === "production"
+        ? {
+            exclude: ["error"],
+          }
+        : false,
+  },
+};
+
+module.exports = withExportImages(nextConfig);
